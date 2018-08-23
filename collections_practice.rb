@@ -42,7 +42,12 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.inject(0, :+)
+i = 0
+sum = 0
+  until i >= array.length
+  sum +=  array[i]
+  i += 1
+end
 end
 
 def add_s(array)
