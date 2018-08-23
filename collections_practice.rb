@@ -38,7 +38,7 @@ end
 def find_a(array)
   array.select do |word|
     word.split("")
-    word.first == "a"
+    word == "a"
   end
 end
 
