@@ -15,7 +15,7 @@ def sort_array_char_count(array)
     word.length
   end
   array.sort do |a, b|
-    a <=> b
+    b <=> a
   end
 end
 
