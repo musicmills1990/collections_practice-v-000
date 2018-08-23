@@ -36,7 +36,10 @@ new_array =[]
 end
 
 def find_a(array)
-  array.include?("a")
+  array.select do |word|
+    word.split("")
+    word.first == "a"
+  end
 end
 
 def sum_array(array)
