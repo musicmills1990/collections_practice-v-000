@@ -11,6 +11,10 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(array)
+  array.collect do |word|
+    word.length
+  end
+  array.sort  
 end
 
 def swap_elements(array)
