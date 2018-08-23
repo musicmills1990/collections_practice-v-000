@@ -11,18 +11,19 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(array)
-  array.collect do |word|
-    word.length
+  new_array = []
+  array.each do |word|
+    new_array << word.length
   end
-  array.sort do |a, b|
-    b <=> a
-  end
+  new_array.sort
 end
 
 def swap_elements(array)
+
 end
 
 def reverse_array(array)
+  array.reverse
 end
 
 def kesha_maker(array)
