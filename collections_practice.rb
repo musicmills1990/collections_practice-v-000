@@ -24,4 +24,3 @@ end
 
 def add_s
 end
-
