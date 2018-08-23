@@ -11,9 +11,8 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(array)
-  new_array = []
-  array.each do |word|
-    word.size
+  array.sort do |a, b|
+    a.length <=> b.length
   end
 end
 
@@ -46,7 +45,6 @@ def sum_array(array)
 end
 
 def add_s(array)
-
   array.each do |word|
     if word != array[1]
       word << "s"
