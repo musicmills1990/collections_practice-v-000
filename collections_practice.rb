@@ -8,7 +8,7 @@ def sort_array_desc(array)
   array.sort do |a, b|
     a <=> b
   end
-  array.reverse
+  return array.reverse
 end
 
 def sort_array_char_count(array)
