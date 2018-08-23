@@ -14,7 +14,9 @@ def sort_array_char_count(array)
   array.collect do |word|
     word.length
   end
-  array.sort
+  array.sort do |a, b|
+    a <=> b
+  end
 end
 
 def swap_elements(array)
